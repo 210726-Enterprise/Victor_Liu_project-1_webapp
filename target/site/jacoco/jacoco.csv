@@ -1,5 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Project1Servlet,default,Driver,8,0,0,0,3,0,2,0,2,0
-Project1Servlet,com.revature.servlet,VideoGameServlet,39,0,0,0,12,0,6,0,6,0
-Project1Servlet,com.revature.service,VideoGameService,171,0,6,0,48,0,9,0,6,0
-Project1Servlet,com.revature.model,VideoGame,127,0,0,0,37,0,14,0,14,0
