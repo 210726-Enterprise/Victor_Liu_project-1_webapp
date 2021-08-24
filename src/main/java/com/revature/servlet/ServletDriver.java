@@ -1,3 +1,5 @@
+package com.revature.servlet;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.revature.model.VideoGame;
