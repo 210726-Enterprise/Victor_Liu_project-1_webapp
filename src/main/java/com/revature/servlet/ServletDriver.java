@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.revature.model.VideoGame;
 import com.revature.orm.util.ORM;
 import com.revature.service.VideoGameService;
-import com.revature.servlet.VideoGameServlet;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
