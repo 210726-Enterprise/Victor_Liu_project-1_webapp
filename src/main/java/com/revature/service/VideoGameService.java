@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.stream.Collectors;
 
+/**
+ * service layer for interfacing between HTTP requests and Databases
+ */
 public class VideoGameService
 {
     private static final Logger logger = LoggerFactory.getLogger(VideoGameService.class);
@@ -24,6 +27,12 @@ public class VideoGameService
         this.orm = orm;
     }
 
+    /**
+     * links GET request with SELECT
+     * gives back all the records in the table
+     * @param req HTTP request
+     * @param resp HTTP response - contains status code and, if successful, list of VideoGames
+     */
     public void getVideoGame(HttpServletRequest req, HttpServletResponse resp)
     {
         try
@@ -39,6 +48,12 @@ public class VideoGameService
         }
     }
 
+    /**
+     * links POST request with INSERT
+     * inserts a new video game into the database
+     * @param req HTTP request - contains JSON of video game
+     * @param resp HTTP response - containse status code
+     */
     public void insertVideoGame(HttpServletRequest req, HttpServletResponse resp)
     {
         try
@@ -68,6 +83,12 @@ public class VideoGameService
         }
     }
 
+    /**
+     * links PUT request with UPDATE
+     * updates a record in the database
+     * @param req HTTP request - contains JSON of video game to update
+     * @param resp HTTP response - contains status code
+     */
     public void updateVideoGame(HttpServletRequest req, HttpServletResponse resp)
     {
         try
@@ -97,6 +118,11 @@ public class VideoGameService
         }
     }
 
+    /**
+     * links DELETE request with DELETE
+     * @param req HTTP request
+     * @param resp HTTP response - contains status code
+     */
     public void deleteVideoGame(HttpServletRequest req, HttpServletResponse resp)
     {
         int gameId = Integer.parseInt(req.getParameter("id"));

@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Servlet for handling HTTP requests
+ * all requests get passed to service layer
+ */
 public class VideoGameServlet extends HttpServlet
 {
     private static final Logger logger = LoggerFactory.getLogger(VideoGameService.class);

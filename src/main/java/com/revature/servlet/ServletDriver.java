@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * Servlet listener
+ * listens for when server is created and creates the servlets
+ */
 @WebListener
 public class ServletDriver implements ServletContextListener
 {
